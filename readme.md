@@ -10,7 +10,7 @@ Halo Custom Edition's SAPP allows additional functionality using the lua languag
 
 - Use import statements to declare that a certain file is using an object or a value that is defined in a different file.
 - Import statements are done relatively to the project directory, NOT relative to the current file.
-- To import properly, you need to follow the correct syntax: `-- import project-dir.directory.to.file.filename`
+- To import properly, you need to follow the correct syntax: `-- import project-dir.directory.to.file.filename end`
 - import statements need to be wrapped between a `-- BEGIN_IMPORT` and an `-- END_IMPORT` statement
 
 ### Ignore Statements
