@@ -234,8 +234,19 @@ def indexFiles(mainFile):
             bfs.push(importedFile)
     return fileMap
 
+
     # Program
 if __name__ == "__main__":
+    if len(sys.argv) > 1 and len(sys.argv) != 5:
+        print("Not enough arguments!")
+        print(
+            "python bundle.py api-version-number project-name project-dir-name entry-file")
+        exit()
+    elif len(sys.argv) == 4:
+        sappApiVersion = sys.argv[1]
+        projectName = sys.argv[2]
+        projectDirName = sys.argv[3]
+        entryFile = sys.argv[4]
     fileMap = indexFiles(os.path.join(os.getcwd(), projectDirName, entryFile))
     sortedFileMap = constructFileHeap(fileMap)
     writeFile(sortedFileMap)
