@@ -12,6 +12,7 @@ Halo Custom Edition's SAPP allows additional functionality using the lua languag
 - Import statements are done relatively to the project directory, NOT relative to the current file.
 - To import properly, you need to follow the correct syntax: `-- import project-dir.directory.to.file.filename end`
 - import statements need to be wrapped between a `-- BEGIN_IMPORT` and an `-- END_IMPORT` statement
+- If your module does not use imports, you MUST include a `-- NO_IMPORTS` statement.
 
 ### Ignore Statements
 
