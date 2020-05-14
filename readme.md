@@ -17,6 +17,16 @@ Halo Custom Edition's SAPP allows additional functionality using the lua languag
 
 - Everything wrapped between a `-- BEGIN_IGNORE` and an `-- END_IGNORE` will be ignored in the final output file.
 
+### Running the bundler
+
+- Before running the bundler, you need to configure some options. You have two choices:
+  1. Open the `bundler.py` file and modify the configuration files to your liking. Make sure the bundler.py file lives directly outside of the project you want to build.
+  2. Run bundler.py with arguments. The proper way to run it is as follows: `python bundler.py sapp-api-version-number project-name project-dir-name entry-file`
+  - `sapp-api-version` is the api version that goes on top of every SAPP file
+  - `project-name` is the name of the output file.
+  - `project-dir-name` is the location of the root folder
+  - `entry-file` is the name of the entry file (I.E, main.lua)
+
 ## Example
 
 While this example is contrived, it clearly demonstrates how the bundler works:
