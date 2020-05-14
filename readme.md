@@ -20,7 +20,7 @@ Halo Custom Edition's SAPP allows additional functionality using the lua languag
 ### Running the bundler
 
 - Before running the bundler, you need to configure some options. You have two choices:
-  1. Open the `bundler.py` file and modify the configuration files to your liking. Make sure the bundler.py file lives directly outside of the project you want to build.
+  1. Open the `bundler.py` file and modify the configuration variables to your liking. Make sure the bundler.py file lives directly outside of the project you want to build.
   2. Run bundler.py with arguments. The proper way to run it is as follows: `python bundler.py sapp-api-version-number project-name project-dir-name entry-file`
   - `sapp-api-version` is the api version that goes on top of every SAPP file
   - `project-name` is the name of the output file.
