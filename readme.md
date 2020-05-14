@@ -6,9 +6,36 @@ Halo Custom Edition's SAPP allows additional functionality using the lua languag
 
 ## How to use the bundler
 
+### Import Statements
+
+- Use import statements to declare that a certain file is using an object or a value that is defined in a different file.
+- Import statements are done relatively to the project directory, NOT relative to the current file.
+- To import properly, you need to follow the correct syntax: `-- import project-dir.directory.to.file.filename`
+- import statements need to be wrapped between a `-- BEGIN_IMPORT` and an `-- END_IMPORT` statement
+
+### Ignore Statements
+
+- Everything wrapped between a `-- BEGIN_IGNORE` and an `-- END_IGNORE` will be ignored in the final output file.
+
 ## Example
 
 While this example is contrived, it clearly demonstrates how the bundler works:
+
+### File Structure
+
+```
+* bundler.py
+- example-one/
+  - components/
+    * N1.lua
+    * N3.lua
+  - util/
+    * N2.lua
+  * main.lua
+  * N4.lua
+```
+
+### Files
 
 `example-one/main.lua`
 
