@@ -187,7 +187,7 @@ def constructFileHeap(fileMap):
 
 def writeFile(files):
     output = ""
-    output += "\"" + sappApiVersion + "\"" + "\n\n"
+    output += "api_version="+"\"" + sappApiVersion + "\"" + "\n\n"
     for file in files:
         file = open(file, "r")
         ignoring = False
